@@ -18,6 +18,9 @@
 		69DF0EFD18D74504004653D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DF0EDC18D74504004653D8 /* Cocoa.framework */; };
 		69DF0F0518D74504004653D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69DF0F0318D74504004653D8 /* InfoPlist.strings */; };
 		69DF0F0718D74504004653D8 /* BezierDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0F0618D74504004653D8 /* BezierDemoTests.m */; };
+		69DF0F1218D745C7004653D8 /* MWBezierCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0F1118D745C7004653D8 /* MWBezierCanvasView.m */; };
+		69DF0F1518D76058004653D8 /* MWBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0F1418D76058004653D8 /* MWBezierCurve.m */; };
+		69DF0F1818D7698C004653D8 /* MWBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0F1718D7698C004653D8 /* MWBezierController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		69DF0F0218D74504004653D8 /* BezierDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BezierDemoTests-Info.plist"; sourceTree = "<group>"; };
 		69DF0F0418D74504004653D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		69DF0F0618D74504004653D8 /* BezierDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierDemoTests.m; sourceTree = "<group>"; };
+		69DF0F1018D745C7004653D8 /* MWBezierCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBezierCanvasView.h; sourceTree = "<group>"; };
+		69DF0F1118D745C7004653D8 /* MWBezierCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBezierCanvasView.m; sourceTree = "<group>"; };
+		69DF0F1318D76058004653D8 /* MWBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBezierCurve.h; sourceTree = "<group>"; };
+		69DF0F1418D76058004653D8 /* MWBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBezierCurve.m; sourceTree = "<group>"; };
+		69DF0F1618D7698C004653D8 /* MWBezierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBezierController.h; sourceTree = "<group>"; };
+		69DF0F1718D7698C004653D8 /* MWBezierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBezierController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,12 @@
 			children = (
 				69DF0EEE18D74504004653D8 /* MWAppDelegate.h */,
 				69DF0EEF18D74504004653D8 /* MWAppDelegate.m */,
+				69DF0F1618D7698C004653D8 /* MWBezierController.h */,
+				69DF0F1718D7698C004653D8 /* MWBezierController.m */,
+				69DF0F1018D745C7004653D8 /* MWBezierCanvasView.h */,
+				69DF0F1118D745C7004653D8 /* MWBezierCanvasView.m */,
+				69DF0F1318D76058004653D8 /* MWBezierCurve.h */,
+				69DF0F1418D76058004653D8 /* MWBezierCurve.m */,
 				69DF0EF118D74504004653D8 /* MainMenu.xib */,
 				69DF0EF418D74504004653D8 /* Images.xcassets */,
 				69DF0EE318D74504004653D8 /* Supporting Files */,
@@ -253,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DF0F1518D76058004653D8 /* MWBezierCurve.m in Sources */,
 				69DF0EF018D74504004653D8 /* MWAppDelegate.m in Sources */,
+				69DF0F1818D7698C004653D8 /* MWBezierController.m in Sources */,
+				69DF0F1218D745C7004653D8 /* MWBezierCanvasView.m in Sources */,
 				69DF0EE918D74504004653D8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

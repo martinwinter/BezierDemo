@@ -1,5 +1,5 @@
 //
-//  MWAppDelegate.h
+//  MWBezierCanvasView.h
 //  BezierDemo
 //
 //  Created by Martin Winter on 17.03.14.
@@ -9,8 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface MWAppDelegate : NSObject <NSApplicationDelegate>
+@interface MWBezierCanvasView : NSView
 
-@property (assign) IBOutlet NSWindow *window;
+@property NSMutableArray *bezierCurves;
+
+- (void)updateT:(CGFloat)t;
 
 @end
