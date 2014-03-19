@@ -129,7 +129,7 @@ CGRect MWControlPointRectForControlPoint(CGPoint controlPoint)
 
         
         //
-        // Draw Beziér curve.
+        // Draw Bézier curve.
         //
         
         CGPathRef path = [self pathForBezierCurve:bezierCurve];
