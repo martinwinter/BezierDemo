@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 
+/**
+ This class demonstrates the use of De Casteljau’s algorithm to draw Bézier curves.
+ */
 @interface MWBezierCanvasView : NSView
 
 @property NSMutableArray *bezierCurves;
