@@ -12,5 +12,6 @@
 @interface MWBezierController : NSObject
 
 @property (nonatomic) CGFloat t;
+@property (nonatomic) CGFloat flatness;
 
 @end

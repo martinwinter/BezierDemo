@@ -17,5 +17,6 @@
 @property NSMutableArray *bezierCurves;
 
 - (void)updateT:(CGFloat)t;
+- (void)updateFlatness:(CGFloat)flatness;
 
 @end

@@ -40,4 +40,12 @@
 }
 
 
+- (void)setFlatness:(CGFloat)flatness
+{
+    _flatness = flatness;
+    
+    [self.canvasView updateFlatness:flatness];
+}
+
+
 @end

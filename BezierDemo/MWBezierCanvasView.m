@@ -30,6 +30,7 @@ CGRect MWControlPointRectForControlPoint(CGPoint controlPoint)
 @interface MWBezierCanvasView ()
 
 @property CGFloat t;
+@property CGFloat flatness;
 @property CGPoint mouseDownLocation;
 @property MWBezierCurve *mouseDownBezierCurve;
 @property NSArray *mouseDownControlPoints;
@@ -64,6 +65,7 @@ CGRect MWControlPointRectForControlPoint(CGPoint controlPoint)
     self = [super initWithFrame:frame];
     if (self)
     {
+        _flatness = 1.0;
         _bezierCurves = [[NSMutableArray alloc] init];
         self.mouseDownControlPointIndex = -1;
     }
@@ -81,6 +83,8 @@ CGRect MWControlPointRectForControlPoint(CGPoint controlPoint)
     
     // Unfortunately, NSBezierPath does not offer quadratic curves, so we need to use CGPath instead.
     CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
+    
+    CGContextSetFlatness(context, self.flatness);
     
     for (MWBezierCurve *bezierCurve in self.bezierCurves)
     {
@@ -312,6 +316,13 @@ CGRect MWControlPointRectForControlPoint(CGPoint controlPoint)
 - (void)updateT:(CGFloat)t
 {
     self.t = t;
+    [self setNeedsDisplay:YES];
+}
+
+
+- (void)updateFlatness:(CGFloat)flatness
+{
+    self.flatness = flatness;
     [self setNeedsDisplay:YES];
 }
 
